@@ -10,10 +10,11 @@ ChooseWinner
 */
 
 pragma solidity ^0.8.12;
+pragma experimental ABIEncoderV2;
 
 contract JumboSimulator {
     
-    address deployer;
+    address public deployer;
 
     uint constant TICKET_PRICE = 0.005 ether;
 
@@ -64,8 +65,8 @@ contract JumboSimulator {
         return customerData[msg.sender];
     }
 
-    function getTotalSoldTickets() public view returns (uint) {
-        return soldTickets.length;
+    function getTotalSoldTickets() public view returns (uint[] memory) {
+        return soldTickets;
     }
 
     function getTicketOwner(uint _ticketId) public view returns (address) {
