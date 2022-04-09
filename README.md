@@ -5,6 +5,11 @@ if you follow from youtube
 
 This is the place where all share reference and source code from youtube serial posted.
 
+## To see chapters materials
+
+The corresponding materials of each videos will be uploaded on corresponding tree branch of this repository.
+
+so please have a look on the blog site `https://curcifer.tech/blog/` for more information about which branch is your desired materials reside.
 
 ### Notes
 - Feel free to download and play with the source.
